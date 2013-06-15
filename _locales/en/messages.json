@@ -1,0 +1,9 @@
+{ "extName":
+  { "message": "_blank2bgtab in Feedly"
+  , "description": "extension name"
+  }
+, "extDescription":
+  { "message": "_blank to open new background tab in Feedly."
+  , "description": "extension description"
+  }
+}

@@ -1,0 +1,9 @@
+{ "extName":
+  { "message": "_blank2bgtab in Feedly"
+  , "description": "extension name"
+  }
+, "extDescription":
+  { "message": "Feedlyで、新しいタブをバックグラウンドで開くようにします。"
+  , "description": "extension description"
+  }
+}
