@@ -1,5 +1,5 @@
 document.addEventListener("click", function(e) {
-  if(e.button == 0) {
+  if(e.button == 0) { //通常クリックのみ反応
     var inlineFrame = false;
     for(var elm = e.target; elm; elm = elm.parentNode) {
       if(elm.classList.contains("inlineFrame")) {
@@ -7,16 +7,16 @@ document.addEventListener("click", function(e) {
         break;
       }
     }
-    if(!inlineFrame) return;
-
-    for(var elm = e.target; elm; elm = elm.parentNode) {
-      if(elm.tagName == "A") {
-        if(elm.target == "_blank" && /^https?:/.test(elm.href)) {
-          e.preventDefault();
-          e.stopPropagation();
-          chrome.extension.sendMessage({url: elm.href});
+    if(inlineFrame) {
+      for(var elm = e.target; elm; elm = elm.parentNode) {
+        if(elm.tagName == "A") {
+          if(elm.target == "_blank" && /^https?:/.test(elm.href)) {
+            e.preventDefault();
+            e.stopPropagation();
+            chrome.extension.sendMessage({url: elm.href});
+          }
+          return;
         }
-        return;
       }
     }
   }

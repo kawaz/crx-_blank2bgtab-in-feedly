@@ -2,7 +2,7 @@
 , "name": "__MSG_extName__"
 , "description": "__MSG_extDescription__"
 , "default_locale": "en"
-, "version": "0.0.6"
+, "version": "0.0.7"
 , "background":
     { "scripts": [ "eventPage.js" ]
     , "persistent": false
