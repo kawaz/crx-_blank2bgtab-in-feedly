@@ -2,7 +2,7 @@
 , "name": "__MSG_extName__"
 , "description": "__MSG_extDescription__"
 , "default_locale": "en"
-, "version": "0.0.4"
+, "version": "0.0.6"
 , "background":
     { "scripts": [ "eventPage.js" ]
     , "persistent": false
@@ -11,8 +11,7 @@
   [ { "all_frames": true
     , "js": [ "document_start.js" ]
     , "matches":
-      [ "http://www.feedly.com/home*"
-      , "http://cloud.feedly.com/*"
+      [ "http://cloud.feedly.com/*"
       , "http://feedly.com/*"
       ]
     , "run_at": "document_start"
