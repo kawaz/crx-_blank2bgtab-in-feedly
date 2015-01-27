@@ -1,4 +1,4 @@
-ChromeExtension: _blank2bgtab in Feedly
+ChromeExtension: feedly-bgtab-opener
 ---------------
 
 ###Chrome Web Store URL

@@ -1,9 +1,9 @@
 { "extName":
-  { "message": "_blank2bgtab in Feedly"
+  { "message": "feedly-bgtab-opener"
   , "description": "extension name"
   }
 , "extDescription":
-  { "message": "_blank to open new background tab in Feedly."
+  { "message": "open new background tab in Feedly."
   , "description": "extension description"
   }
 }
