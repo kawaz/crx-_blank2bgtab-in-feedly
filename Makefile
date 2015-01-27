@@ -1,2 +1,2 @@
 all:
-	zip -r ../crx-_blank2bgtab-in-feedly-$(cat manifest.json | jq .version | sed 's/"//g').zip *
+	zip -r "`pwd`-`jq .version manifest.json | tr -d '"'`".zip *
